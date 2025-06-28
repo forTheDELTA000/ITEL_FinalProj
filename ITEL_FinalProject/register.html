@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Technological_University_of_the_Philippines_Logo.svg/1200px-Technological_University_of_the_Philippines_Logo.svg.png" alt="TUP Logo">
+    <div class="header-text">
+      <h1>OrgaVibe</h1>
+      <p>Event Registration</p>
+    </div>
+  </div>
+  
+  <div class="login-box">
+    <h2 style="text-align:center; color:white;">Create Account</h2>
+
+    <div class="input-group">
+      <label for="username">
+        Username <span class="required-msg" id="usernameRequired">(REQUIRED)</span>
+      </label>
+      <input type="text" id="username" placeholder="Enter your username">
+    </div>
+
+    <div class="input-group">
+      <label for="email">
+        Email Address <span class="required-msg" id="emailRequired">(REQUIRED)</span>
+      </label>
+      <input type="email" id="email" placeholder="Enter your email">
+    </div>
+
+    <div class="input-group">
+      <label for="password">
+        Password <span class="required-msg" id="passwordRequired">(REQUIRED)</span>
+      </label>
+      <input type="password" id="password" placeholder="Enter your password">
+    </div>
+
+    <div class="input-group">
+      <label for="confirmPassword">
+        Confirm Password <span class="required-msg" id="confirmPasswordRequired">(REQUIRED)</span>
+      </label>
+      <input type="password" id="confirmPassword" placeholder="Confirm your password">
+    </div>
+
+    <div class="actions">
+      <p class="go-back-text">Already have an account?</p>
+      <button class="backBtn" onclick="goToLogin()">Login</button>
+      <button class="createBtn" onclick="createAccount()">Create Account</button>
+    </div>
+  </div>
+
+  <script src="scriptRegister.js"></script>
+</body>
+</html>

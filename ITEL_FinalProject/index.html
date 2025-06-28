@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Technological_University_of_the_Philippines_Logo.svg/1200px-Technological_University_of_the_Philippines_Logo.svg.png" alt="TUP Logo">
+    <div class="header-text">
+      <h1>OrgaVibe</h1>
+      <p>Event Registration</p>
+    </div>
+  </div>
+
+  <div class="login-box">
+    <div class="input-group">
+      <label for="username">
+        Username <span class="required-msg" id="usernameRequired">(REQUIRED)</span>
+      </label>
+      <input type="text" id="username" placeholder="Enter your username">
+    </div>
+
+    <div class="input-group">
+      <label for="password">
+        Password <span class="required-msg" id="passwordRequired">(REQUIRED)</span>
+      </label>
+      <input type="password" id="password" placeholder="Enter your password">
+    </div>
+
+    <div class="actions">
+      <p class="register-text">Don’t have an account?</p>
+      <button class="registerBtn" onclick="register()">Register</button>
+      <button class="loginBtn" onclick="login()">Login</button>
+    </div>
+
+    <p class="forgot" onclick="forgotPassword()">Forgot your password? Click Here!</p>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
